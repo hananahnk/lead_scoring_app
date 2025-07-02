@@ -32,14 +32,23 @@ uploaded_file = st.file_uploader("📁 Upload leads.csv", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
+
+    # Drop extra columns if present (e.g., Lead Quality or Company)
+    allowed_cols = ["Name", "Title", "Industry", "Company Size", 
+                    "Email Present", "LinkedIn Present", "Domain Score"]
+    df = df[[col for col in df.columns if col in allowed_cols]]
+
+    # Encode features
     df = preprocess(df)
 
-    # Fix missing encoded values
+    # Fill unmapped values with -1
     df.fillna(-1, inplace=True)
 
+    # Features expected by the model
     model_features = ["Title Encoded", "Industry Encoded", "Size Encoded", 
                       "Email Present", "LinkedIn Present", "Domain Score"]
 
+    # Predict lead score
     df["Lead Score"] = model.predict_proba(df[model_features])[:, 1] * 100
     df_sorted = df.sort_values("Lead Score", ascending=False)
 
