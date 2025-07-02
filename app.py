@@ -33,18 +33,22 @@ uploaded_file = st.file_uploader("📁 Upload leads.csv", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
-    # Drop extra columns if present (e.g., Lead Quality or Company)
-    allowed_cols = ["Name", "Title", "Industry", "Company Size", 
-                    "Email Present", "LinkedIn Present", "Domain Score"]
-    df = df[[col for col in df.columns if col in allowed_cols]]
+    # Clean unexpected whitespace and capitalization
+    for col in ["Title", "Industry", "Company Size"]:
+        df[col] = df[col].astype(str).str.strip().str.title()
 
-    # Encode features
+    # Keep only required columns
+    required_cols = ["Name", "Title", "Industry", "Company Size", 
+                     "Email Present", "LinkedIn Present", "Domain Score"]
+    df = df[[col for col in df.columns if col in required_cols]]
+
+    # Preprocess for encoding
     df = preprocess(df)
 
-    # Fill unmapped values with -1
+    # Fill any missing encoded values with -1
     df.fillna(-1, inplace=True)
 
-    # Features expected by the model
+    # Model features expected
     model_features = ["Title Encoded", "Industry Encoded", "Size Encoded", 
                       "Email Present", "LinkedIn Present", "Domain Score"]
 
