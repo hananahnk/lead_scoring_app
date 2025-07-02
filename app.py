@@ -55,7 +55,7 @@ if uploaded_file:
     with st.expander("🔎 Show Feature Importance"):
         explainer = shap.Explainer(model, df[features])
         shap_values = explainer(df[features])
-        mean_importance = np.abs(shap_values.values).mean(axis=0)
+        mean_importance = np.abs(shap_values.values).mean(axis=0).flatten()
 
         shap_df = pd.DataFrame({
             'Feature': features,
