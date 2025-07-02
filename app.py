@@ -34,6 +34,9 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
     df = preprocess(df)
 
+    # Fix missing encoded values
+    df.fillna(-1, inplace=True)
+
     model_features = ["Title Encoded", "Industry Encoded", "Size Encoded", 
                       "Email Present", "LinkedIn Present", "Domain Score"]
 
@@ -49,20 +52,24 @@ if uploaded_file:
 
     # SHAP explanation
     with st.expander("🔎 Show Feature Importance"):
-        explainer = shap.Explainer(model, df[model_features])
-        shap_values = explainer(df[model_features])
-        shap_importance = np.abs(shap_values.values).mean(axis=0).ravel()
+        try:
+            explainer = shap.Explainer(model, df[model_features])
+            shap_values = explainer(df[model_features])
+            shap_importance = np.abs(shap_values.values).mean(axis=0).ravel()
 
-        if len(model_features) == len(shap_importance):
-            shap_df = pd.DataFrame({
-                'Feature': model_features,
-                'Importance': shap_importance
-            }).sort_values(by='Importance', ascending=True)
+            if shap_importance.shape[0] != len(model_features):
+                st.error("⚠️ SHAP feature mismatch. Some rows may have unencoded or missing data.")
+            else:
+                shap_df = pd.DataFrame({
+                    "Feature": model_features,
+                    "Importance": shap_importance
+                }).sort_values(by="Importance", ascending=True)
 
-            fig, ax = plt.subplots()
-            ax.barh(shap_df['Feature'], shap_df['Importance'], color='steelblue')
-            ax.set_xlabel("Mean |SHAP Value|")
-            ax.set_title("Feature Importance")
-            st.pyplot(fig)
-        else:
-            st.error("⚠️ SHAP feature mismatch. Please verify input structure.")
+                fig, ax = plt.subplots()
+                ax.barh(shap_df["Feature"], shap_df["Importance"], color="steelblue")
+                ax.set_xlabel("Mean |SHAP Value|")
+                ax.set_title("Feature Importance")
+                st.pyplot(fig)
+
+        except Exception as e:
+            st.error(f"❌ SHAP failed: {str(e)}")
