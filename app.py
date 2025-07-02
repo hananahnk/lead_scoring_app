@@ -53,11 +53,9 @@ if uploaded_file:
         shap_values = explainer(df[model_features])
         shap_importance = np.abs(shap_values.values).mean(axis=0).ravel()
 
-        feature_names = explainer.feature_names
-
-        if len(feature_names) == len(shap_importance):
+        if len(model_features) == len(shap_importance):
             shap_df = pd.DataFrame({
-                'Feature': feature_names,
+                'Feature': model_features,
                 'Importance': shap_importance
             }).sort_values(by='Importance', ascending=True)
 
