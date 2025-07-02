@@ -14,17 +14,29 @@ st.set_page_config(page_title="Smart Lead Scoring Tool")
 st.title("🔍 Smart Lead Scoring Tool")
 st.write("Upload your leads.csv file to get lead quality predictions.")
 
-# Preprocessing function (encoding logic)
+# Preprocessing function with casing normalization
 def preprocess(df):
-    title_map = {'CEO': 0, 'CTO': 1, 'Founder': 2, 'Marketing Director': 3,
-                 'Sales Manager': 4, 'Intern': 5, 'Analyst': 6}
-    industry_map = {'SaaS': 0, 'E-commerce': 1, 'Fintech': 2, 'Healthcare': 3,
-                    'Real Estate': 4, 'Retail': 5, 'AI': 6}
-    size_map = {'1-10': 0, '11-50': 1, '51-200': 2, '201-500': 3, '500+': 4}
+    # Normalize text
+    for col in ["Title", "Industry", "Company Size"]:
+        df[col] = df[col].astype(str).str.strip().str.lower()
+
+    # Lowercased encoding maps
+    title_map = {
+        'ceo': 0, 'cto': 1, 'founder': 2, 'marketing director': 3,
+        'sales manager': 4, 'intern': 5, 'analyst': 6
+    }
+    industry_map = {
+        'saas': 0, 'e-commerce': 1, 'fintech': 2, 'healthcare': 3,
+        'real estate': 4, 'retail': 5, 'ai': 6
+    }
+    size_map = {
+        '1-10': 0, '11-50': 1, '51-200': 2, '201-500': 3, '500+': 4
+    }
 
     df["Title Encoded"] = df["Title"].map(title_map)
     df["Industry Encoded"] = df["Industry"].map(industry_map)
     df["Size Encoded"] = df["Company Size"].map(size_map)
+
     return df
 
 # File uploader
@@ -33,37 +45,33 @@ uploaded_file = st.file_uploader("📁 Upload leads.csv", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
-    # Clean unexpected whitespace and capitalization
-    for col in ["Title", "Industry", "Company Size"]:
-        df[col] = df[col].astype(str).str.strip().str.title()
-
-    # Keep only required columns
-    required_cols = ["Name", "Title", "Industry", "Company Size", 
+    # Drop extra columns like 'Company' or 'Lead Quality'
+    required_cols = ["Name", "Title", "Industry", "Company Size",
                      "Email Present", "LinkedIn Present", "Domain Score"]
     df = df[[col for col in df.columns if col in required_cols]]
 
-    # Preprocess for encoding
+    # Preprocess
     df = preprocess(df)
 
-    # Fill any missing encoded values with -1
+    # Fill missing encodings
     df.fillna(-1, inplace=True)
 
-    # Model features expected
-    model_features = ["Title Encoded", "Industry Encoded", "Size Encoded", 
+    # Model features
+    model_features = ["Title Encoded", "Industry Encoded", "Size Encoded",
                       "Email Present", "LinkedIn Present", "Domain Score"]
 
-    # Predict lead score
+    # Lead scoring
     df["Lead Score"] = model.predict_proba(df[model_features])[:, 1] * 100
     df_sorted = df.sort_values("Lead Score", ascending=False)
 
     st.success("✅ Leads scored successfully!")
     st.dataframe(df_sorted[["Name", "Title", "Industry", "Domain Score", "Lead Score"]].head(10))
 
-    # Download button
-    csv = df_sorted.to_csv(index=False).encode('utf-8')
+    # Download
+    csv = df_sorted.to_csv(index=False).encode("utf-8")
     st.download_button("⬇️ Download Scored Leads", data=csv, file_name="scored_leads.csv", mime="text/csv")
 
-    # SHAP explanation
+    # SHAP Explanation
     with st.expander("🔎 Show Feature Importance"):
         try:
             explainer = shap.Explainer(model, df[model_features])
