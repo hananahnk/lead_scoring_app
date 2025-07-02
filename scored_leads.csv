@@ -1,0 +1,151 @@
+Name,Title,Company,Industry,Company Size,Email Present,LinkedIn Present,Domain Score,Lead Quality,Title Encoded,Industry Encoded,Size Encoded,Lead Score
+Lori Horton,CTO,"Smith, Murphy and Anderson",E-commerce,11-50,1,1,44,1,2,1,1,97.0
+Craig Yates,CTO,"Newton, Smith and Knight",Real Estate,11-50,1,1,90,1,2,4,1,97.0
+Brandon Howell,CTO,Patterson-Chen,Fintech,201-500,1,0,48,1,2,2,2,97.0
+Mr. Bryan Tate DDS,CTO,Tate-Hernandez,Healthcare,500+,1,1,71,1,2,3,3,97.0
+April Fernandez,CTO,Griffin Group,Fintech,51-200,1,0,85,1,2,2,4,97.0
+Leslie Bates,CTO,Neal Inc,Retail,500+,1,1,98,1,2,5,3,97.0
+Alexis Hernandez,Founder,"Snyder, Key and Taylor",Fintech,201-500,1,0,66,1,3,2,2,96.0
+Teresa Davis,CEO,Henry Group,Healthcare,51-200,1,1,68,1,1,3,4,96.0
+Michelle Cox,CTO,Perez-Baird,Fintech,11-50,1,1,92,1,2,2,1,96.0
+Joseph Snyder,Founder,"Scott, Sexton and Anthony",E-commerce,51-200,1,0,68,1,3,1,4,96.0
+Melissa Carter DVM,CTO,Olsen-Swanson,Real Estate,11-50,1,0,98,1,2,4,1,95.0
+Karen Schmidt,CTO,Haney Group,Retail,201-500,1,1,64,1,2,5,2,95.0
+Dennis Mclaughlin,CEO,Jones-Garcia,Real Estate,51-200,1,1,87,1,1,4,4,95.0
+Nicholas Jenkins,Founder,"Gallegos, Jones and Powell",Retail,500+,1,1,99,1,3,5,3,94.0
+Chelsea Ramirez,Founder,Atkinson-Reyes,Healthcare,11-50,1,1,56,1,3,3,1,94.0
+Kelsey Cantrell,Founder,"Woods, Elliott and English",Fintech,51-200,1,1,76,1,3,2,4,94.0
+Vanessa Pratt,CTO,"Cooper, Tate and Richardson",Healthcare,201-500,1,0,91,1,2,3,2,93.0
+Ryan Garcia,CTO,Martinez and Sons,Retail,11-50,1,1,43,1,2,5,1,93.0
+Stacey Harris,CTO,"Holmes, Bailey and Richards",Retail,500+,1,0,86,1,2,5,3,92.0
+Isaiah Martinez,CEO,Vasquez LLC,E-commerce,11-50,1,1,84,1,1,1,1,92.0
+Amber Brown,Founder,"Boyd, Long and Webb",Retail,500+,1,1,97,1,3,5,3,92.0
+Breanna Hernandez,Founder,"Calhoun, Robinson and Schaefer",Retail,51-200,1,1,62,1,3,5,4,92.0
+William Ashley,CTO,Werner-Simmons,AI,11-50,1,0,85,1,2,0,1,91.0
+Joseph Powell,CTO,White-Massey,SaaS,51-200,1,0,92,1,2,6,4,91.0
+John Mack,CEO,Harris LLC,E-commerce,51-200,1,0,46,1,1,1,4,91.0
+Blake Patterson,CEO,"Harris, Skinner and Weiss",SaaS,51-200,1,1,84,1,1,6,4,89.0
+Jennifer Johnson,Founder,Carpenter-Hanson,E-commerce,1-10,1,0,63,1,3,1,0,88.0
+Mary Charles,CTO,"Young, Ellis and Cooper",Healthcare,51-200,1,0,80,1,2,3,4,88.0
+Brian Lara,Founder,"Golden, Ortiz and Harris",Healthcare,500+,1,0,91,1,3,3,3,88.0
+Amanda Long,CTO,Miller Group,Real Estate,1-10,1,1,98,1,2,4,0,86.0
+Catherine Mooney,CEO,"Burns, Sanford and Murray",Healthcare,1-10,1,0,48,1,1,3,0,84.0
+Andrea Dominguez,CTO,Arnold-Escobar,SaaS,1-10,1,0,45,1,2,6,0,84.0
+Gregory Bryan,Founder,"Strong, Wilcox and Martinez",Real Estate,1-10,1,1,58,1,3,4,0,81.0
+Kenneth Griffin,Founder,"Tanner, Holland and Rosales",SaaS,201-500,1,0,95,1,3,6,2,76.0
+Rebecca Bray,Analyst,Gillespie Inc,Real Estate,11-50,1,0,90,0,0,4,1,40.0
+Allison Flores,Analyst,"Castro, Fuller and Bennett",SaaS,11-50,1,0,74,0,0,6,1,21.0
+Christine Davis,Analyst,Whitehead Inc,Retail,500+,1,1,99,0,0,5,3,19.0
+Brandon West,CEO,Gallegos Inc,SaaS,1-10,0,0,99,0,1,6,0,15.0
+Sarah Smith,Analyst,"Mendez, King and Castillo",E-commerce,1-10,1,0,97,0,0,1,0,14.000000000000002
+Tyler Smith,Analyst,"Fletcher, Bush and Lewis",Real Estate,1-10,1,1,63,0,0,4,0,12.0
+Denise Smith,Sales Manager,Hernandez-Bruce,Fintech,11-50,1,0,69,0,6,2,1,12.0
+Emily Moore,Analyst,Simon LLC,Healthcare,1-10,1,0,68,0,0,3,0,12.0
+Tanya Burns,Sales Manager,"Gomez, Miranda and Gonzales",Real Estate,1-10,1,1,44,0,6,4,0,10.0
+Paige Harris,CEO,Stuart-Juarez,E-commerce,51-200,0,0,63,0,1,1,4,10.0
+Michael Perez,Analyst,Fernandez-Young,Healthcare,51-200,1,0,44,0,0,3,4,9.0
+Bonnie Lane,Sales Manager,Robertson-Parker,Fintech,11-50,1,1,54,0,6,2,1,9.0
+William Barr,Intern,Matthews-Sheppard,E-commerce,51-200,1,1,94,0,4,1,4,8.0
+Matthew Wilson,Analyst,Fitzpatrick-Solis,SaaS,500+,1,0,64,0,0,6,3,8.0
+Jacob Watson,Analyst,"Khan, Hudson and Mcdonald",Healthcare,51-200,1,0,47,0,0,3,4,8.0
+Jerry Collins,Intern,Williams-Daniel,Fintech,11-50,1,1,41,0,4,2,1,7.000000000000001
+Paul Rodriguez,Marketing Director,Schwartz and Sons,AI,51-200,1,1,63,0,5,0,4,7.000000000000001
+Sherri Campbell,Analyst,Hernandez-Howard,Retail,1-10,1,1,96,0,0,5,0,7.000000000000001
+Cheryl Wilson,Intern,Mercer LLC,Fintech,51-200,1,1,55,0,4,2,4,6.0
+Kimberly Martinez,Founder,"Wallace, Taylor and Bryant",E-commerce,51-200,0,1,65,0,3,1,4,5.0
+Christine Tanner,Marketing Director,Gordon-Irwin,Retail,1-10,1,0,40,0,5,5,0,5.0
+Sierra Howard,Founder,"Simmons, Banks and Brown",SaaS,500+,0,0,56,0,3,6,3,5.0
+Michael Herrera,Sales Manager,"Page, Powers and Sullivan",Retail,201-500,1,1,90,0,6,5,2,5.0
+William Byrd,CTO,Bates Ltd,AI,1-10,0,1,94,0,2,0,0,4.0
+Ronald Silva,Marketing Director,"Russell, Davis and Brown",Healthcare,500+,1,0,87,0,5,3,3,4.0
+Randy Washington,CTO,Welch LLC,Real Estate,1-10,0,1,82,0,2,4,0,4.0
+Katherine Romero,Sales Manager,Hill Group,Fintech,1-10,1,1,60,0,6,2,0,4.0
+Timothy Brown,CTO,Mccullough-Jenkins,E-commerce,201-500,0,1,85,0,2,1,2,4.0
+Brian Harris,CTO,Pratt Ltd,Real Estate,11-50,0,1,41,0,2,4,1,4.0
+Kaitlyn Williams,Marketing Director,"Brown, Ortiz and Gray",Real Estate,201-500,1,1,90,0,5,4,2,4.0
+Crystal Lee,CTO,Hernandez and Sons,SaaS,201-500,0,0,85,0,2,6,2,4.0
+Teresa Salazar,CTO,"Ortiz, Williams and Olsen",Healthcare,51-200,0,0,79,0,2,3,4,4.0
+Patrick Richards,Sales Manager,"Holloway, Ford and Jackson",SaaS,51-200,1,1,43,0,6,6,4,3.0
+Henry Carrillo,Marketing Director,James and Sons,Retail,500+,1,1,96,0,5,5,3,3.0
+James Horne,Founder,Dorsey-Figueroa,SaaS,51-200,0,1,84,0,3,6,4,3.0
+Thomas George,Sales Manager,Hall and Sons,E-commerce,1-10,1,1,75,0,6,1,0,3.0
+Tina Beck,Founder,Wilson Ltd,Retail,51-200,0,1,50,0,3,5,4,3.0
+James Nelson Jr.,Sales Manager,Mckinney Ltd,AI,1-10,1,1,90,0,6,0,0,3.0
+Ricky Kidd,CTO,Boyle-Parsons,SaaS,1-10,0,1,63,0,2,6,0,2.0
+Taylor Curtis,Sales Manager,Villarreal Inc,SaaS,1-10,1,1,40,0,6,6,0,2.0
+Martha Griffith MD,Sales Manager,"Bell, Davenport and Reynolds",Healthcare,201-500,1,1,75,0,6,3,2,2.0
+Vickie Santos,Marketing Director,Yoder Ltd,Healthcare,201-500,0,0,65,0,5,3,2,2.0
+Jonathan Lee,Analyst,Macdonald-Ramos,Healthcare,11-50,0,0,86,0,0,3,1,2.0
+William Davenport,CEO,Vazquez Ltd,AI,500+,0,0,75,0,1,0,3,2.0
+Patricia Summers,Founder,Patterson and Sons,Healthcare,51-200,0,0,42,0,3,3,4,2.0
+Alfred Woods,CEO,Morrison-Taylor,Fintech,1-10,0,1,43,0,1,2,0,2.0
+Jessica Thomas,Founder,Robinson-Moreno,Fintech,11-50,0,0,87,0,3,2,1,2.0
+Sabrina Perry,Intern,"Mooney, Clark and Bates",Real Estate,11-50,1,0,55,0,4,4,1,2.0
+Duane Blackburn,Sales Manager,Flores Inc,Healthcare,201-500,1,0,46,0,6,3,2,2.0
+Christina Mercado,Analyst,Murphy-Hayes,SaaS,51-200,0,0,57,0,0,6,4,2.0
+Christopher Chen,Marketing Director,Davis-Clark,Real Estate,51-200,1,0,61,0,5,4,4,2.0
+Paula Henry,Founder,Freeman and Sons,AI,500+,0,1,78,0,3,0,3,2.0
+John Mendoza,CTO,"Woodward, Porter and Rowland",AI,51-200,0,1,46,0,2,0,4,1.0
+Gina Williams,Intern,Hopkins-Terry,Real Estate,201-500,1,1,44,0,4,4,2,1.0
+Austin Hobbs,CTO,White-Lambert,Fintech,201-500,0,0,67,0,2,2,2,1.0
+James Ortiz,CTO,"Koch, Stevens and Davidson",Real Estate,201-500,0,1,48,0,2,4,2,1.0
+Emily Lawrence,Analyst,"Marshall, Perkins and Cobb",Healthcare,201-500,0,0,86,0,0,3,2,1.0
+Barbara Smith,Founder,Perkins Group,SaaS,11-50,0,1,45,0,3,6,1,1.0
+Stephen Murray,Analyst,"Woods, White and Parrish",Healthcare,500+,0,1,77,0,0,3,3,1.0
+Jordan Maddox,Analyst,Ford-Reyes,AI,201-500,0,1,68,0,0,0,2,1.0
+Joseph Wolfe,Intern,"Coleman, Jacobs and Jacobson",E-commerce,1-10,0,0,73,0,4,1,0,1.0
+Courtney Fox,Analyst,"Taylor, Stone and Schmidt",Real Estate,201-500,0,1,68,0,0,4,2,1.0
+Nicole Lewis,Analyst,"Harrison, Davis and Williamson",Retail,51-200,0,1,63,0,0,5,4,1.0
+Christopher Richards,Founder,Valdez PLC,Retail,1-10,0,1,69,0,3,5,0,1.0
+Anthony Church,Intern,"Rodriguez, Knight and Doyle",SaaS,500+,0,0,88,0,4,6,3,1.0
+Christina Patrick,Analyst,Avila Inc,Retail,51-200,0,1,80,0,0,5,4,1.0
+Theresa Williams,CTO,Hubbard-Lopez,SaaS,11-50,0,0,64,0,2,6,1,1.0
+Jeffrey Reese,Analyst,Scott-Oconnor,Healthcare,201-500,0,0,84,0,0,3,2,1.0
+Julie Kim,Intern,Kelly-Davis,Real Estate,500+,1,0,77,0,4,4,3,1.0
+Carrie Hill,Intern,Walter-Lee,Real Estate,500+,1,0,44,0,4,4,3,1.0
+Michelle Roman,Analyst,"Miller, Baker and Jones",SaaS,201-500,0,0,55,0,0,6,2,1.0
+Craig Bryant,Sales Manager,"Ali, Berger and Cross",E-commerce,1-10,0,0,64,0,6,1,0,1.0
+Scott Hudson,Intern,Luna LLC,Real Estate,201-500,1,0,59,0,4,4,2,1.0
+Jesse Norris,Sales Manager,"Reed, Mckenzie and Avery",Retail,11-50,0,0,76,0,6,5,1,0.0
+Trevor Richardson,Marketing Director,Forbes-Brown,Retail,51-200,0,1,45,0,5,5,4,0.0
+Edward Graham,Founder,Walters-Brown,E-commerce,1-10,0,0,42,0,3,1,0,0.0
+Jason Gonzalez,Founder,Alexander-Butler,SaaS,201-500,0,1,43,0,3,6,2,0.0
+Andrew Barry,Founder,"Chan, Williams and Smith",Fintech,201-500,0,1,45,0,3,2,2,0.0
+Albert Hawkins,Intern,Crawford Ltd,Healthcare,500+,1,1,78,0,4,3,3,0.0
+Susan Flores,Intern,Dunn-Wilkerson,Retail,11-50,0,1,55,0,4,5,1,0.0
+Melissa Smith,Sales Manager,"Baker, Smith and Baker",Fintech,201-500,0,0,95,0,6,2,2,0.0
+Donald Lin,Marketing Director,"Burns, Hayes and Stevens",Fintech,11-50,0,1,73,0,5,2,1,0.0
+Jonathan Payne,Marketing Director,Dorsey-Sanchez,Real Estate,51-200,0,1,75,0,5,4,4,0.0
+Jasmine Evans,Marketing Director,Brandt-Gay,SaaS,11-50,1,0,62,0,5,6,1,0.0
+Theresa Irwin,CEO,Griffin PLC,Retail,500+,0,1,64,0,1,5,3,0.0
+Kelly Lopez,CTO,"Dickerson, Rivera and Perez",Healthcare,11-50,0,0,69,0,2,3,1,0.0
+Daniel Hill,Founder,White Ltd,Fintech,201-500,0,0,69,0,3,2,2,0.0
+Tracy May,CEO,Jones-Smith,E-commerce,11-50,0,1,45,0,1,1,1,0.0
+Eric Mejia,Intern,"Atkins, Smith and Vazquez",SaaS,500+,0,1,59,0,4,6,3,0.0
+Victoria Davis,Marketing Director,Nelson-Brown,Retail,51-200,0,1,47,0,5,5,4,0.0
+Joshua Villa,Sales Manager,"Olson, Franklin and Fox",Real Estate,1-10,0,0,80,0,6,4,0,0.0
+Dakota Kennedy,Intern,Blackwell PLC,SaaS,51-200,0,1,72,0,4,6,4,0.0
+Brittany Jacobs,Intern,"Stewart, Moore and Morris",Retail,201-500,0,1,95,0,4,5,2,0.0
+Karen Clark,Marketing Director,"Lopez, Franco and Ortiz",E-commerce,500+,0,0,56,0,5,1,3,0.0
+Eileen Garcia,Intern,Rocha Group,Retail,201-500,0,0,45,0,4,5,2,0.0
+Bruce Howard,Marketing Director,"Scott, Stevens and Walls",SaaS,201-500,0,0,83,0,5,6,2,0.0
+Mercedes Gomez,Marketing Director,"Hudson, Campbell and Black",SaaS,11-50,1,0,64,0,5,6,1,0.0
+Brandon Adams,Intern,Best PLC,Healthcare,11-50,0,1,94,0,4,3,1,0.0
+Christian Lyons,Marketing Director,Maxwell Ltd,Healthcare,500+,0,1,94,0,5,3,3,0.0
+Amy Cook,Intern,Adams-Hayden,Fintech,500+,0,0,64,0,4,2,3,0.0
+Kirsten Hayes,Analyst,"Powell, Brown and Moore",Healthcare,500+,0,0,58,0,0,3,3,0.0
+Debra Cummings,Marketing Director,"Burnett, Porter and King",SaaS,201-500,0,1,43,0,5,6,2,0.0
+April Pollard,Analyst,Thomas PLC,Fintech,201-500,0,0,43,0,0,2,2,0.0
+Margaret Livingston,Sales Manager,Doyle Group,Real Estate,1-10,0,0,45,0,6,4,0,0.0
+Daniel Adams,CTO,"Campbell, Lewis and Morrow",Retail,1-10,0,1,63,0,2,5,0,0.0
+Joshua Snyder,Founder,Smith Group,SaaS,51-200,0,1,40,0,3,6,4,0.0
+Aaron Robinson,Sales Manager,Morgan Inc,Healthcare,500+,0,1,93,0,6,3,3,0.0
+Daisy Simmons,CTO,Mann and Sons,SaaS,500+,0,1,42,0,2,6,3,0.0
+Max Davis,Intern,Wood PLC,Retail,1-10,0,0,78,0,4,5,0,0.0
+Michael Smith,Analyst,"White, Shaw and Ramirez",Real Estate,11-50,0,0,82,0,0,4,1,0.0
+Roy Lopez,Founder,Nelson LLC,SaaS,51-200,0,1,52,0,3,6,4,0.0
+Kyle Ball,Intern,"Hopkins, Stewart and Townsend",Fintech,201-500,0,1,78,0,4,2,2,0.0
+Dawn Parrish,Analyst,Serrano-Phillips,E-commerce,1-10,0,1,48,0,0,1,0,0.0
+Kim Allen,Marketing Director,"Robinson, Ellis and Cannon",Fintech,201-500,0,0,77,0,5,2,2,0.0
+Victoria Huber,Intern,Haley and Sons,SaaS,1-10,0,0,87,0,4,6,0,0.0
+Samantha Murray,Intern,Williams-Kirby,E-commerce,500+,0,0,77,0,4,1,3,0.0
