@@ -3,8 +3,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import shap
-import matplotlib.pyplot as plt
 
 # Load the model
 model = joblib.load("model.pkl")
@@ -60,30 +58,3 @@ if uploaded_file:
 
     csv = df_sorted.to_csv(index=False).encode("utf-8")
     st.download_button("⬇️ Download Scored Leads", data=csv, file_name="scored_leads.csv", mime="text/csv")
-
-    with st.expander("🔎 Show Feature Importance"):
-        try:
-            st.write("📊 SHAP Input Shape:", df[model_features].shape)
-            st.dataframe(df[model_features].head())
-
-            explainer = shap.Explainer(model, df[model_features])
-            shap_values = explainer(df[model_features])
-            shap_importance = np.abs(shap_values.values).mean(axis=0).ravel()
-
-            if shap_importance.shape[0] != len(model_features):
-                st.warning("⚠️ SHAP mismatch: Expected vs Returned feature count.")
-                st.write("Expected:", len(model_features), "| Got:", shap_importance.shape[0])
-            else:
-                shap_df = pd.DataFrame({
-                    "Feature": model_features,
-                    "Importance": shap_importance
-                }).sort_values(by="Importance", ascending=True)
-
-                fig, ax = plt.subplots()
-                ax.barh(shap_df["Feature"], shap_df["Importance"], color="steelblue")
-                ax.set_xlabel("Mean |SHAP Value|")
-                ax.set_title("Feature Importance")
-                st.pyplot(fig)
-
-        except Exception as e:
-            st.error(f"❌ SHAP failed: {str(e)}")
